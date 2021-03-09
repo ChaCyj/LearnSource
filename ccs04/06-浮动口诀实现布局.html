@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*浮动元素默认之间没有缝隙 和真正的行内块之间有区别的
+          行内块元素之间有小缝隙!!!
+        */
+
+        /*注意:浮动的元素互相贴靠一起的,但是如果父级宽度装不下这些浮动的盒子,多出的盒子会另起一行对齐*/
+        .one,
+        .two,
+        .three {
+            width: 200px;
+            height: 200px;
+            background-color:pink;
+        }
+
+        .one {
+            float: left;
+        }
+
+        .two {
+            background-color: purple;
+            float: left;
+        }
+
+        .three {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*出现了权重叠加
+          .nav a 0,0,1,0 + 0,0,0,1 = 0,0,1,1
+        */
+        .nav a {
+            color: red;
+        }
+
+        /*类选择器权重为0,0,0,1 没有比后代选择器高*/
+/*        .first {
+            color: pink;
+        }*/
+
+        /*权重0,0,2,0*/
+        .nav .first {
+            color: pink;
+        }
+
+        /* 0,0,0,5 + 0,0,0,5 = 0,0,0,10 没有进制 不会存在10个标签选择器 = 一个类选择器情况 */
+    </style>
+</head>
+<body>
+    <div>主题</div>
+    <div class="nav">
+        <a href="#" class="first">11</a>
+        <a href="#">22</a>
+        <a href="#">33</a>
+        <a href="#">44</a>
+    </div>
+</body>
+</html>

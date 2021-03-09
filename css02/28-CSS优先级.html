@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        如果选择器相同,执行层叠性
+        如果选择器不同,则会出现优先级的问题
+        权重计算公式:
+        继承或者*       0,0,0,0 组员
+        标签选择器      0,0,0,1 小组长
+        每个类,伪类     0,0,1,0 班长
+        id选择器       0,1,0,0 班主任
+        行内样式表      1,0,0,0 校长
+        !important    无穷大
+
+
+        */
+        div {
+            color: red;
+        }
+
+        div {
+            color: pink!important;
+        }
+
+        #two {
+            color: purple;
+        }
+
+        .one {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" id="two" style="color: yellow">
+        权重权重
+    </div>
+</body>
+</html>

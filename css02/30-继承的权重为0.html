@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*继承的权重是0
+            1.如果选中了,那么以权重公式来计算权重,谁大听谁的
+            2.如果没有选中,那么权重是0,因为继承的权重为0
+        */
+
+        /*没有选中p,继承的,权重为0,0,0,0*/
+        div {
+            color: red;
+        }
+
+        p {
+            color: green;
+        }
+
+        .demo {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <p>继承的权重为0</p>
+    </div>
+</body>
+</html>

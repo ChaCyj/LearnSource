@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bg {
+            width: 600px;
+            height: 500px;
+            background-color: pink;
+            /*必须加url url后的地址推荐不加引号 */
+            background-image: url(images/l.jpg);
+            /*背景图片平铺*/
+            background-repeat: no-repeat;
+
+            /*首先必须制定background-image属性*/
+            /*position后面是x坐标和y坐标,可以适用方位名词或者精确单位*/
+            /*如果只指定了一个方位名词,另一个值默认居中,为50%*/
+            /*如果只指定一个数值,那该数值用于x坐标,另一个默认是y坐标,默认居中*/
+            /*如果指定两个值,两个值都是方位名字,则两个值前后顺序无关,比如left,top和top,left效果一致*/
+            /*如果指定两个值,精确单位和方位名字混合使用,则第一个值是x坐标,第二个值是y坐标*/
+
+            /*  ------->x
+                |
+                |
+                |
+                |
+                ↓
+                y          */
+            background-position: center center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        123
+    </div>
+</body>
+</html>

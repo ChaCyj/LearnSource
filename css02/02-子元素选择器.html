@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*后代选择器 选择 子孙后代(全选)*/
+        div strong {
+            color: red;
+        }
+
+        /*子元素选择器
+          子元素选择器只能选择作为某元素子元素(亲儿子)的元素*/
+        div>strong {
+            color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <strong>儿子</strong>
+        <strong>儿子</strong>
+        <strong>儿子</strong>
+    </div>
+
+    <div>
+        <p>
+            <strong>孙子</strong>
+            <strong>孙子</strong>
+            <strong>孙子</strong>
+        </p>
+    </div>
+</body>
+</html>

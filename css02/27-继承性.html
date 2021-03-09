@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*继承性
+          子标签会继承父标签的某些样式,如文本颜色和字号
+          想要设置一个可继承的属性,只需将它应用于父元素即可
+          简单理解:子承父业
+          注意:
+            恰当地使用继承可以简化代码,降低CSS样式的复杂性,比如有很多子级孩子都需要某个样式,可以给父级指定一个,这些孩子继承过来就好了
+            子元素可以继承父元素的样式(text-,font,line-这些元素开头的可以继承,以及color属性)
+
+        */
+        div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>王思聪</p>
+    </div>
+</body>
+</html>

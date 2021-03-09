@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*导航栏的核心就是因为里面的字数不一样多,所以我们不方便给宽度,还是给padding,撑开盒子的*/
+        div {
+            height: 41px;
+            /*上边框*/
+            border-top: 3px solid orange;
+            /*下边框*/
+            border-bottom: 1px solid #cccccc;
+            background-color: #FCFCFC;
+        }
+
+        div a {
+            /*转换为行内块*/
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            /*跟盒子高度一样*/
+            height: 41px;
+            /* 上下是0 左右是20内边距 */
+            padding: 0 20px;
+            /*文字垂直居中 行高 = 高*/
+            line-height: 41px;
+        }
+
+        a:hover {
+            background-color: rgba(0,0,0,0.1);
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">设为首页</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">博客</a>
+        <a href="#">微博</a>
+        <a href="#">关注我</a>
+    </div>
+</body>
+</html>

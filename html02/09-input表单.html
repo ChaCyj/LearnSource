@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--type属于text 是一个文本框-->
+    用户名: <input type="text" value="请输入用户名" name="username"> <br>
+    昵称: <input type="text" value="请输入昵称" name="name"> <br>
+
+    <!--type属于password 是一个密码框-->
+    密码: <input type="password" name="password"> <br>
+
+    <!--type属于radio 是一个单元按钮框-->
+    性别:
+        男<input type="radio" name="sex" checked="checked">
+        女<input type="radio" name="sex"> <br>
+
+    <!--type属于checkbox 是一个复选框按钮-->
+    爱好:
+        睡觉 <input type="checkbox" name="hobby">
+        爬山 <input type="checkbox" name="hobby" checked="checked">
+        篮球 <input type="checkbox" name="hobby">
+        足球 <input type="checkbox" name="hobby"> <br>
+
+    <!--普通按钮需要写value值-->
+    <input type="button" value="获取短信验证码">
+    <input type="submit" >
+    <input type="reset">
+    <!--图片提交按钮 里面必须包含src属性-->
+    <input type="image" src="../css01/images/btn.png"> <br>
+
+    上传头像:
+             <!--文件域 上传文件用的-->
+             <input type="file">
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*需要,就是让 p标签 变成红色*/
+        /*交集选择器,既是 p标签 又是 .red类选择器 的关系*/
+        p.red {
+            color: red;
+        }
+
+        .red div{
+            color: #0667E1;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="red">红色</p>
+    <p class="red">红色</p>
+    <p class="red">红色</p>
+
+    <div class="red">红色</div>
+    <div class="red">红色</div>
+    <div class="red">红色</div>
+
+    <p class="blue">蓝色</p>
+</body>
+</html>
