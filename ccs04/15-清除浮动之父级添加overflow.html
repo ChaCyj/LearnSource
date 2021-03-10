@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--清楚浮动的本质-->
+    <!--    清楚浮动主要为了解决父级元素因为子级浮动引起内部高度为0的问题,清除浮动之后-->
+    <!--        父级就会根据浮动的盒子自动检测高度. 父级有了高度,就不会影响下面的标准流了-->
+    <style>
+
+        .one {
+            width: 500px;
+            /*background-color: pink;*/
+            border: 1px solid red;
+            /*给父级添加 overflow 就可以清除浮动*/
+            /*优点:代码简洁*/
+            /*缺点:内容增多时候容易造成不会自动换行导致内容被隐藏掉,无法显示需要溢出的元素*/
+            overflow: hidden;
+        }
+
+        .damao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .ermao {
+            float: left;
+            width: 250px;
+            height: 250px;
+            background-color: skyblue;
+        }
+
+
+        .two {
+            width: 700px;
+            height: 150px;
+            background-color: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+    </div>
+
+    <div class="two">
+
+    </div>
+
+</body>
+</html>

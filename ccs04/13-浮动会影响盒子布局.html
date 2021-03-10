@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--清楚浮动的本质-->
+    <!--    清楚浮动主要为了解决父级元素因为子级浮动引起内部高度为0的问题,清除浮动之后-->
+    <!--        父级就会根据浮动的盒子自动检测高度. 父级有了高度,就不会影响下面的标准流了-->
+    <style>
+        /*one是父级,但是很多情况下,不方便给高度*/
+        /*子盒子有多少内容,就显示多少内容,自动撑开父亲最为盒里*/
+        .one {
+            width: 500px;
+            background-color: pink;
+        }
+
+        /*因为damao ermao 浮动了,不占有位置 而父级跟子级高度跟随,所以父级没有高度*/
+        /*所以two就跑上来了*/
+        .damao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .ermao {
+            float: left;
+            width: 250px;
+            height: 250px;
+            background-color: skyblue;
+        }
+
+        .two {
+            width: 700px;
+            height: 150px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+    </div>
+
+    <div class="two">
+
+    </div>
+
+</body>
+</html>
