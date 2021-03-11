@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            width: 300px;
+            height: 500px;
+            margin: 50px auto;
+        }
+
+        li:nth-of-type(n) {
+            background-color: black;
+        }
+
+        li:nth-of-type(2n) {
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li:hover {
+            background-color: #0099e5;
+        }
+
+        nav ul li a {
+            display: block;
+            height: 35px;
+            padding: 0 38px;
+            text-decoration: none;
+            color: #fff;
+            line-height: 35px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">JaveEE教程</a>
+            </li>
+            <li>
+                <a href="#">Android教程</a>
+            </li>
+            <li>
+                <a href="#">PHP教程</a>
+            </li>
+            <li>
+                <a href="#">UI设计教程</a>
+            </li>
+            <li>
+                <a href="#">IOS教程</a>
+            </li>
+            <li>
+                <a href="#">Web前端教程</a>
+            </li>
+            <li>
+                <a href="#">C/C++教程</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
